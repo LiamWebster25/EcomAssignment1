@@ -1,5 +1,6 @@
 <?php
 namespace \app\controllers;
+
 function index() {
     //Counter model object
     $counter = new Counter();
@@ -9,4 +10,6 @@ function index() {
     $counter->write();
     //Echo the counter
     echo $counter;
+    //View the page
+    view('Contact/index');
 }

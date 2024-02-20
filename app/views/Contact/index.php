@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Landing</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div>
@@ -22,9 +23,16 @@
         <p>Welcome to this Web application.</p>
         <p>We aim to please.</p>
     </div>
+    <div id="page-counter">Loading...</div>
 </body>
 </html>
-
+<script>
+$(document).ready(function(){
+    $.getJSON("localhost/Count/index", function(data) {
+        $('#page-counter').text(data.count); // Update the text of an element with ID 'page-counter'
+    });
+});
+</script>
 <style>
     body {
         display: flex;

@@ -32,7 +32,8 @@ class App{
                     'Person/'=>'Person,list',
                     'Person/delete' => 'Person,delete',
                     'Person/edit/{id}' => 'Person,edit',
-                    'Person/update' => 'Person,update'];
+                    'Person/update' => 'Person,update',
+                    'Contact/index' => 'Count,index'];
 
         //one by one compare the url to resolve the route
         foreach ($routes as $routeUrl => $controllerMethod) {
