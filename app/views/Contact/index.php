@@ -18,10 +18,10 @@
                 <a href="#">
                     <li>About Us</li>
                 </a>
-                <a href="#">
+                <a href="index">
                     <li>Contact Us</li>
                 </a>
-                <a href="#">
+                <a href="read">
                     <li>See the messages we get</li>
                 </a>
             </ul>
@@ -30,7 +30,7 @@
     <div>
         <h1>Contact Us</h1>
         <p>Want to reach us? Write your email information and message in the following form and then submit.</p>
-        <form action="">
+        <form method="post">
             <div class="form-group">
                 <label for="input1">Email: </label>
                 <input id="input1" type="text">

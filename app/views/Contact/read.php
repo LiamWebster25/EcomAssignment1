@@ -12,16 +12,16 @@
     <div>
         <nav>
             <ul>
-                <a href="#">
+                <a href="Main/index.php">
                     <li>Landing Page</li>
                 </a>
                 <a href="#">
                     <li>About Us</li>
                 </a>
-                <a href="#">
+                <a href="index">
                     <li>Contact Us</li>
                 </a>
-                <a href="#">
+                <a href="read">
                     <li>See the messages we get</li>
                 </a>
             </ul>

@@ -1,7 +1,7 @@
 <?php
 namespace app\controllers;
 
-class Message extends \app\core\Controller
+class Main extends \app\core\Controller
 {
 
     function about_us()

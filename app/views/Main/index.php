@@ -12,13 +12,13 @@
     <div>
         <nav>
             <ul>
-                <a href="#">
+                <a href="index">
                     <li>Landing Page</li>
                 </a>
-                <a href="#">
+                <a href="about_us">
                     <li>About Us</li>
                 </a>
-                <a href="#">
+                <a href="Contact/index">
                     <li>Contact Us</li>
                 </a>
                 <a href="#">
