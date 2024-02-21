@@ -10,6 +10,4 @@ function index() {
     $counter->write();
     //Echo the counter
     echo $counter;
-    //View the page
-    view('Contact/index');
 }

@@ -1,15 +1,30 @@
 <?php
+namespace app\controllers;
 
+class Message extends \app\core\Controller
+{
 
-function contact(){
+    function read()
+    {
+        //showing the read view
+        $this->view('Contact/read');
+    }
 
-    $message = new \app\models\Message();
+    function index()
+    {
+        $this->view('Contact/index');
+    }
+    function contact()
+    {
 
-    $message->name = $_POST['name'];
-    $message->email = $_POST['email'];
-    $message->IP = $_SERVER['REMOTE_ADDR'];
+        $message = new \app\models\Message();
 
-    $message->write();
+        $message->name = $_POST['name'];
+        $message->email = $_POST['email'];
+        $message->IP = $_SERVER['REMOTE_ADDR'];
 
-    header('location:/Contact/read');
+        $message->write();
+
+        header('location:/Contact/read');
+    }
 }
