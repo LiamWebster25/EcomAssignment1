@@ -10,7 +10,7 @@ class Person extends \app\core\Controller{
 
 	function register(){
 		//showing the register view
-		$this->view('Person/register');
+		$this->view('Contact/read');
 	}
 
 	function complete_registration(){

@@ -1,8 +1,7 @@
 <?php
 
 
-function complete_registration(){
-    print_r($_POST);
+function contact(){
 
     $message = new \app\models\Message();
 
