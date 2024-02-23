@@ -12,23 +12,16 @@
     <div>
         <nav>
             <ul>
-                <a href="Main/index.php">
-                    <li>Landing Page</li>
-                </a>
-                <a href="#">
-                    <li>About Us</li>
-                </a>
-                <a href="index">
-                    <li>Contact Us</li>
-                </a>
-                <a href="read">
-                    <li>See the messages we get</li>
-                </a>
+                <li><a href="../Main/index">Landing Page</a></li>
+                <li><a href="../Main/about_us">About Us</a></li>
+                <li><a href="index">Contact Us</a></li>
+                <li><a href="read">See the messages we get</a></li>
             </ul>
         </nav>
     </div>
     <div>
         <h1>Contact Us - messages sent</h1>
+        <pre><?php echo htmlspecialchars($messages); ?></pre>
     </div>
 </body>
 

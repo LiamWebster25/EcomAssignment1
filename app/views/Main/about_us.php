@@ -14,8 +14,8 @@
             <ul>
                 <li><a href="index">Landing Page</a></li>
                 <li><a href="about_us">About Us</a></li>
-                <li><a href="Contact/index">Contact Us</a></li>
-                <li><a href="#">See the messages we get</a></li>
+                <li><a href="../Contact/index">Contact Us</a></li>
+                <li><a href="../Contact/read">See the messages we get</a></li>
             </ul>
         </nav>
     </div>

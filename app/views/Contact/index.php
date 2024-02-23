@@ -13,17 +13,10 @@
     <div>
         <nav>
             <ul>
-                <a href="#">
-                    <li>Landing Page</li>
-                </a>
-                <a href="#">
-                    <li>About Us</li>
-                </a>
-                <a href="index">
-                    <li>Contact Us</li>
-                </a>
-                <a href="read">
-                    <li>See the messages we get</li>
+                <li><a href="../Main/index">Landing Page</a></li>
+                <li><a href="../Main/about_us">About Us</a></li>
+                <li><a href="index">Contact Us</a></li>
+                <li><a href="read">See the messages we get</a></li>
                 </a>
             </ul>
         </nav>
