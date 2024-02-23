@@ -20,7 +20,7 @@ class Contact extends \app\core\Controller
         $message = new \app\models\Message();
 
         $message->email = $_POST['email'];
-        $message->name = $_POST['name'];
+        $message->message = $_POST['message'];
         $message->IP = $_SERVER['REMOTE_ADDR'];
 
         $message->write();

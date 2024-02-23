@@ -4,7 +4,7 @@ namespace app\models;
 class Message
 {
 
-    public $name;
+    public $message;
     public $email;
     public $IP;
 
@@ -12,7 +12,7 @@ class Message
 		if($object == null) {
 			return;// avoid this running when there is no parameter....
         }
-		$this->name = $object->name;
+		$this->message = $object->message;
 		$this->email = $object->email;
 		$this->IP = $object->IP;
 	}
@@ -20,7 +20,7 @@ class Message
     public static function read()
     {
         //read the file and return the collection of Messages
-        $filename = '../../resources/Messages.txt';
+        $filename = 'resources/Messages.txt';
         $records = file($filename);
         //process the JSON strings into objects
         foreach ($records as $key => $value) {
@@ -34,7 +34,7 @@ class Message
     public function write()
     {
         //Open file for writing
-        $fileName = '../../resources/Messages.txt';
+        $fileName = 'resources/Messages.txt';
         $file_handle = fopen($fileName, 'a');
         //lock file for writing
         flock($file_handle, LOCK_EX);

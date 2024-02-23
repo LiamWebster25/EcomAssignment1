@@ -34,7 +34,8 @@ class App
             'Contact/index' => 'Contact,index',
             'Main/index' => 'Main,index',
             'Contact/read' => 'Contact,read',
-            'Main/about_us' => 'Main,about_us'
+            'Main/about_us' => 'Main,about_us',
+            'Contact/contact'=> 'Contact,contact'
         ];
 
         //one by one compare the url to resolve the route

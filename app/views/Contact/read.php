@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - messages sent</title>
+    <title>
+        Contact - Messages Sent
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -24,15 +28,16 @@
         <table>
             <tr>
                 <th>email</th>
-                <th>name</th>
+                <th>message</th>
                 <th>IP</th>
             </tr>
 
             <?php
             foreach ($data as $index => $message) {
-                echo "<tr><td>$message->email</td><td>$message->name</td><td>$message->ip</td></tr>";
+                echo "<tr><td>$message->email</td><td>$message->message</td><td>$message->IP</td></tr>";
             }
             ?>
+        </table>
     </div>
 </body>
 
@@ -78,4 +83,32 @@
     a:hover {
         color: #5b63b788;
     }
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #5B63B7;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
 </style>
