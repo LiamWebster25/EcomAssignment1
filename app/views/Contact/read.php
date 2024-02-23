@@ -21,7 +21,18 @@
     </div>
     <div>
         <h1>Contact Us - messages sent</h1>
-        <pre><?php echo htmlspecialchars($messages); ?></pre>
+        <table>
+            <tr>
+                <th>email</th>
+                <th>name</th>
+                <th>IP</th>
+            </tr>
+
+            <?php
+            foreach ($data as $index => $message) {
+                echo "<tr><td>$message->email</td><td>$message->name</td><td>$message->ip</td></tr>";
+            }
+            ?>
     </div>
 </body>
 

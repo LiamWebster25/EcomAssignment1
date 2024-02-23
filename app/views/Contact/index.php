@@ -24,16 +24,16 @@
     <div class="container">
         <h1>Contact Us</h1>
         <p>Want to reach us? Write your email information and message in the following form and then submit.</p>
-        <form method="post">
+        <form method="post" action='/Contact/read'>
             <div class="form-group">
                 <label for="input1">Email: </label>
-                <input id="input1" type="text">
+                <input id="input1" type="text" name="email">
             </div>
             <div class="form-group">
                 <label for="input2">Message: </label>
-                <textarea id="input2" name="multiLineTextInput" rows="4"></textarea>
+                <textarea id="input2" name="message" rows="4"></textarea>
             </div>
-            <input type="submit" value="Send!">
+            <input type="submit" name="action" value="Send!">
         </form>
     </div>
 </body>
