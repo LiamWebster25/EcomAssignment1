@@ -24,7 +24,7 @@
     <div class="container">
         <h1>Contact Us</h1>
         <p>Want to reach us? Write your email information and message in the following form and then submit.</p>
-        <form method="post" action='/Contact/read'>
+        <form method="post" action='/Contact/contact'>
             <div class="form-group">
                 <label for="input1">Email: </label>
                 <input id="input1" type="text" name="email">

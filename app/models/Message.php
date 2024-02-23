@@ -9,8 +9,9 @@ class Message
     public $IP;
 
     public function __construct($object = null){
-		if($object == null)
+		if($object == null) {
 			return;// avoid this running when there is no parameter....
+        }
 		$this->name = $object->name;
 		$this->email = $object->email;
 		$this->IP = $object->IP;
